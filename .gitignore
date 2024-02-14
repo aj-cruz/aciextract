@@ -3,4 +3,5 @@ __pycache__
 .mypy_cache
 *.gz
 *.log
+*.json
 poetry.lock
