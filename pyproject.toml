@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aciextract"
+version = "0.1.0"
+description = "Extract Configuration from an ACI backup file"
+authors = ["AJ Cruz <aj.cruz@computacenter.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,3698 @@
+{
+    "policies_interface": {
+        "dot1x_auth": [
+            {
+                "attributes": {
+                    "adminSt": "disabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "hostMode": "single-host",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "cdp": [
+            {
+                "attributes": {
+                    "adminSt": "disabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "adminSt": "enabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "system-cdp-enabled",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "adminSt": "disabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "system-cdp-disabled",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "copp": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "data_plane_policing": [
+            {
+                "attributes": {
+                    "adminSt": "disabled",
+                    "annotation": "",
+                    "be": "unspecified",
+                    "beUnit": "unspecified",
+                    "burst": "unspecified",
+                    "burstUnit": "unspecified",
+                    "conformAction": "transmit",
+                    "conformMarkCos": "unspecified",
+                    "conformMarkDscp": "unspecified",
+                    "descr": "",
+                    "dn": "",
+                    "exceedAction": "drop",
+                    "exceedMarkCos": "unspecified",
+                    "exceedMarkDscp": "unspecified",
+                    "mode": "bit",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "pir": "0",
+                    "pirUnit": "unspecified",
+                    "rate": "0",
+                    "rateUnit": "unspecified",
+                    "sharingMode": "dedicated",
+                    "type": "1R2C",
+                    "userdom": "all",
+                    "violateAction": "drop",
+                    "violateMarkCos": "unspecified",
+                    "violateMarkDscp": "unspecified"
+                }
+            }
+        ],
+        "dwdm": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "fcotChannelNumber": "Channel32",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "fiberchannel_interface": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "automaxspeed": "32G",
+                    "descr": "",
+                    "dn": "",
+                    "fillPattern": "IDLE",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "portMode": "f",
+                    "rxBBCredit": "64",
+                    "speed": "auto",
+                    "trunkMode": "trunk-off",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "firewall": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "mode": "learning",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "l2_interface": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "qinq": "disabled",
+                    "userdom": "all",
+                    "vepa": "disabled",
+                    "vlanScope": "global"
+                }
+            }
+        ],
+        "link_flap": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "linkFlapErrorMax": "30",
+                    "linkFlapErrorSeconds": "420",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "link_level": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "autoNeg": "on",
+                    "descr": "",
+                    "dfeDelayMs": "0",
+                    "dn": "",
+                    "emiRetrain": "disable",
+                    "fecMode": "inherit",
+                    "linkDebounce": "100",
+                    "name": "system-link-level-40G-auto",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "portPhyMediaType": "auto",
+                    "speed": "40G",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "annotation": "",
+                    "autoNeg": "on",
+                    "descr": "",
+                    "dfeDelayMs": "0",
+                    "dn": "",
+                    "emiRetrain": "disable",
+                    "fecMode": "inherit",
+                    "linkDebounce": "100",
+                    "name": "system-link-level-25G-auto",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "portPhyMediaType": "auto",
+                    "speed": "25G",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "annotation": "",
+                    "autoNeg": "on",
+                    "descr": "",
+                    "dfeDelayMs": "0",
+                    "dn": "",
+                    "emiRetrain": "disable",
+                    "fecMode": "inherit",
+                    "linkDebounce": "100",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "portPhyMediaType": "auto",
+                    "speed": "inherit",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "annotation": "",
+                    "autoNeg": "on",
+                    "descr": "",
+                    "dfeDelayMs": "0",
+                    "dn": "",
+                    "emiRetrain": "disable",
+                    "fecMode": "inherit",
+                    "linkDebounce": "100",
+                    "name": "system-link-level-400G-auto",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "portPhyMediaType": "auto",
+                    "speed": "400G",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "annotation": "",
+                    "autoNeg": "on",
+                    "descr": "",
+                    "dfeDelayMs": "0",
+                    "dn": "",
+                    "emiRetrain": "disable",
+                    "fecMode": "inherit",
+                    "linkDebounce": "100",
+                    "name": "system-link-level-10G-auto",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "portPhyMediaType": "auto",
+                    "speed": "10G",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "annotation": "",
+                    "autoNeg": "on",
+                    "descr": "",
+                    "dfeDelayMs": "0",
+                    "dn": "",
+                    "emiRetrain": "disable",
+                    "fecMode": "inherit",
+                    "linkDebounce": "100",
+                    "name": "system-link-level-1G-auto",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "portPhyMediaType": "auto",
+                    "speed": "1G",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "annotation": "",
+                    "autoNeg": "on",
+                    "descr": "",
+                    "dfeDelayMs": "0",
+                    "dn": "",
+                    "emiRetrain": "disable",
+                    "fecMode": "inherit",
+                    "linkDebounce": "100",
+                    "name": "system-link-level-100M-auto",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "portPhyMediaType": "auto",
+                    "speed": "100M",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "annotation": "",
+                    "autoNeg": "on",
+                    "descr": "",
+                    "dfeDelayMs": "0",
+                    "dn": "",
+                    "emiRetrain": "disable",
+                    "fecMode": "inherit",
+                    "linkDebounce": "100",
+                    "name": "system-link-level-100G-auto",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "portPhyMediaType": "auto",
+                    "speed": "100G",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "link_level_flow_control": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "llfcRcvAdminSt": "off",
+                    "llfcSendAdminSt": "off",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "lldp": [
+            {
+                "attributes": {
+                    "adminRxSt": "enabled",
+                    "adminTxSt": "enabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "adminRxSt": "enabled",
+                    "adminTxSt": "enabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "system-lldp-enabled",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "adminRxSt": "disabled",
+                    "adminTxSt": "disabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "system-lldp-disabled",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "mcp": [
+            {
+                "attributes": {
+                    "adminSt": "enabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "gracePeriod": "3",
+                    "gracePeriodMsec": "0",
+                    "mcpMode": "off",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "strictInitDelayTime": "0",
+                    "strictTxFreq": "0",
+                    "strictTxFreqMsec": "500",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "poe": [
+            {
+                "attributes": {
+                    "adminSt": "enabled",
+                    "annotation": "",
+                    "consumption": "4000",
+                    "descr": "",
+                    "dn": "",
+                    "max": "30000",
+                    "mode": "never",
+                    "name": "testpoepol",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "poeVoiceVlan": "unknown",
+                    "policeAct": "err-dis",
+                    "prioHigh": "no",
+                    "userdom": ":all:"
+                }
+            }
+        ],
+        "port_channel": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "ctrl": "fast-sel-hot-stdby,graceful-conv",
+                    "descr": "",
+                    "dn": "",
+                    "maxLinks": "16",
+                    "minLinks": "1",
+                    "mode": "off",
+                    "name": "system-static-on",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "annotation": "",
+                    "ctrl": "fast-sel-hot-stdby,graceful-conv",
+                    "descr": "",
+                    "dn": "",
+                    "maxLinks": "16",
+                    "minLinks": "1",
+                    "mode": "active",
+                    "name": "system-lacp-active",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "annotation": "",
+                    "ctrl": "fast-sel-hot-stdby,graceful-conv,susp-individual",
+                    "descr": "",
+                    "dn": "",
+                    "maxLinks": "16",
+                    "minLinks": "1",
+                    "mode": "mac-pin-nicload",
+                    "name": "system-mac-pinning-physical-nic-load",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "annotation": "",
+                    "ctrl": "fast-sel-hot-stdby,graceful-conv,susp-individual",
+                    "descr": "",
+                    "dn": "",
+                    "maxLinks": "16",
+                    "minLinks": "1",
+                    "mode": "off",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "annotation": "",
+                    "ctrl": "fast-sel-hot-stdby,graceful-conv",
+                    "descr": "",
+                    "dn": "",
+                    "maxLinks": "16",
+                    "minLinks": "1",
+                    "mode": "passive",
+                    "name": "system-lacp-passive",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            },
+            {
+                "attributes": {
+                    "annotation": "",
+                    "ctrl": "fast-sel-hot-stdby,graceful-conv,susp-individual",
+                    "descr": "",
+                    "dn": "",
+                    "maxLinks": "16",
+                    "minLinks": "1",
+                    "mode": "mac-pin",
+                    "name": "system-mac-pinning",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "port_channel_member": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "32768",
+                    "txRate": "normal",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "port_security": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "maximum": "0",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "timeout": "60",
+                    "userdom": "all",
+                    "violation": "protect"
+                }
+            }
+        ],
+        "priority_flow_control": [
+            {
+                "attributes": {
+                    "adminSt": "auto",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "slow_drain": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "congClearAction": "off",
+                    "congDetectMult": "10",
+                    "descr": "",
+                    "dn": "",
+                    "flushAdminSt": "disabled",
+                    "flushIntvl": "500",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "spanning_tree": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "ctrl": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "storm_control": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "bcBurstPps": "unspecified",
+                    "bcBurstRate": "100.000000",
+                    "bcRate": "100.000000",
+                    "bcRatePps": "unspecified",
+                    "burstPps": "unspecified",
+                    "burstRate": "100.000000",
+                    "descr": "",
+                    "dn": "",
+                    "isUcMcBcStormPktCfgValid": "Invalid",
+                    "mcBurstPps": "unspecified",
+                    "mcBurstRate": "100.000000",
+                    "mcRate": "100.000000",
+                    "mcRatePps": "unspecified",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "rate": "100.000000",
+                    "ratePps": "unspecified",
+                    "stormCtrlAction": "drop",
+                    "stormCtrlSoakInstCount": "3",
+                    "type": "all",
+                    "userdom": "all",
+                    "uucBurstPps": "unspecified",
+                    "uucBurstRate": "100.000000",
+                    "uucRate": "100.000000",
+                    "uucRatePps": "unspecified"
+                }
+            }
+        ],
+        "sync_eth_interface": [
+            {
+                "attributes": {
+                    "adminSt": "disabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "qloptype": "none",
+                    "qlrcvexactval": "fsync-ql-common-none",
+                    "qlrcvhval": "fsync-ql-common-none",
+                    "qlrcvlval": "fsync-ql-common-none",
+                    "qltxexactval": "fsync-ql-common-none",
+                    "qltxhval": "fsync-ql-common-none",
+                    "qltxlval": "fsync-ql-common-none",
+                    "selinput": "no",
+                    "srcpriority": "100",
+                    "ssm": "yes",
+                    "userdom": "all",
+                    "wtr": "5"
+                }
+            }
+        ],
+        "zr_transceiver": [
+            {
+                "attributes": {
+                    "adminSt": "disabled",
+                    "annotation": "",
+                    "cdMax": "2400",
+                    "cdMin": "-2400",
+                    "dacRate": "1x1",
+                    "descr": "",
+                    "dn": "",
+                    "dwdmCarrier": "100MHzFrequency",
+                    "fecMode": "cFEC",
+                    "frequency100MHz": "1931000",
+                    "frequency50GHz": "19310",
+                    "ituChannel50GHz": "61",
+                    "modulation": "16QAM",
+                    "muxponder": "1x400",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "transmitPower": "-190",
+                    "userdom": "all",
+                    "wavelength50GHz": "1552524"
+                }
+            }
+        ],
+        "zrp_transceiver": [
+            {
+                "attributes": {
+                    "adminSt": "disabled",
+                    "annotation": "",
+                    "cdMax": "13000",
+                    "cdMin": "-13000",
+                    "dacRate": "1x1.25",
+                    "descr": "",
+                    "dn": "",
+                    "dwdmCarrier": "100MHzFrequency",
+                    "fecMode": "oFEC",
+                    "frequency100MHz": "1911500",
+                    "frequency50GHz": "19115",
+                    "ituChannel50GHz": "1",
+                    "modulation": "16QAM",
+                    "muxponder": "1x400",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "transmitPower": "-190",
+                    "userdom": "all",
+                    "wavelength50GHz": "1528773"
+                }
+            }
+        ],
+        "macsec": {
+            "parameters": [
+                {
+                    "attributes": {
+                        "annotation": "",
+                        "cipherSuite": "gcm-aes-xpn-256",
+                        "confOffset": "offset-0",
+                        "descr": "",
+                        "dn": "",
+                        "keySvrPrio": "16",
+                        "name": "MACSEC-Param-Pol",
+                        "nameAlias": "",
+                        "ownerKey": "",
+                        "ownerTag": "",
+                        "replayWindow": "64",
+                        "sakExpiryTime": "disabled",
+                        "secPolicy": "should-secure",
+                        "userdom": ":all:"
+                    }
+                }
+            ],
+            "keychain": [
+                {
+                    "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "name": "KeychainPol",
+                        "nameAlias": "",
+                        "ownerKey": "",
+                        "ownerTag": "",
+                        "userdom": ":all:"
+                    },
+                    "children": [
+                        {
+                            "macsecKeyPol": {
+                                "attributes": {
+                                    "annotation": "",
+                                    "descr": "",
+                                    "dn": "",
+                                    "endTime": "infinite",
+                                    "keyName": "beef",
+                                    "name": "KeyPol",
+                                    "nameAlias": "",
+                                    "ownerKey": "",
+                                    "ownerTag": "",
+                                    "preSharedKey": "SES1+GnAr+XGg3lbwBa2ZDWGaHx98W2D0dblJYuKTAhHqvS693Pw5K+0TvacNurJCP45nEQhyEx5q/PX9sm7+zsKOr4ZF5Gscnw6x2J4oyCtemIMtDia0H7/tAhkLGU2LxpUVZlplzBvYVV8KkGg9CGQJSTlk4QL32ltLZZZkXAzPrA=",
+                                    "startTime": "2024-02-13T16:47:29.753+00:00",
+                                    "userdom": ":all:"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "interfaces": [
+                {
+                    "attributes": {
+                        "adminSt": "enabled",
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "name": "MacSec_access_IntPol",
+                        "nameAlias": "",
+                        "ownerKey": "",
+                        "ownerTag": "",
+                        "userdom": ":all:"
+                    },
+                    "children": [
+                        {
+                            "macsecRsToParamPol": {
+                                "attributes": {
+                                    "annotation": "",
+                                    "dn": "",
+                                    "tDn": "uni/infra/macsecpcont/paramp-MACSEC-Param-Pol",
+                                    "userdom": ":all:"
+                                }
+                            }
+                        },
+                        {
+                            "macsecRsToKeyChainPol": {
+                                "attributes": {
+                                    "annotation": "",
+                                    "dn": "",
+                                    "tDn": "uni/infra/macsecpcont/keychainp-KeychainPol",
+                                    "userdom": ":all:"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "attributes": {
+                        "adminSt": "disabled",
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "name": "default",
+                        "nameAlias": "",
+                        "ownerKey": "",
+                        "ownerTag": "",
+                        "userdom": "all"
+                    }
+                }
+            ]
+        },
+        "netflow": {
+            "record": [
+                {
+                    "attributes": {
+                        "annotation": "",
+                        "collect": "src-intf",
+                        "descr": "",
+                        "dn": "",
+                        "match": "",
+                        "name": "default",
+                        "nameAlias": "",
+                        "ownerKey": "",
+                        "ownerTag": "",
+                        "userdom": "all"
+                    }
+                }
+            ],
+            "exporter": [
+                {
+                    "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "dscp": "CS2",
+                        "dstAddr": "2.2.2.2",
+                        "dstPort": "99",
+                        "name": "MyExporter",
+                        "nameAlias": "",
+                        "ownerKey": "",
+                        "ownerTag": "",
+                        "sourceIpType": "custom-src-ip",
+                        "srcAddr": "1.1.1.0/20",
+                        "userdom": ":all:",
+                        "ver": "v9"
+                    }
+                }
+            ],
+            "vm_exporter": [
+                {
+                    "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "dscp": "CS2",
+                        "dstAddr": "5.5.5.0",
+                        "dstPort": "99",
+                        "name": "vmexporter",
+                        "nameAlias": "",
+                        "ownerKey": "",
+                        "ownerTag": "",
+                        "srcAddr": "1.1.1.1",
+                        "userdom": ":all:",
+                        "ver": "v9"
+                    }
+                }
+            ],
+            "monitor": [
+                {
+                    "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "name": "default",
+                        "nameAlias": "",
+                        "ownerKey": "",
+                        "ownerTag": "",
+                        "userdom": "all"
+                    },
+                    "children": [
+                        {
+                            "netflowRsMonitorToRecord": {
+                                "attributes": {
+                                    "annotation": "",
+                                    "dn": "",
+                                    "tnNetflowRecordPolName": "",
+                                    "userdom": "all"
+                                }
+                            }
+                        },
+                        {
+                            "netflowRsMonitorToExporter": {
+                                "attributes": {
+                                    "annotation": "",
+                                    "dn": "",
+                                    "tnNetflowExporterPolName": "MyExporter",
+                                    "userdom": ":all:"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "policies_global": {
+        "dhcp": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "mode": "visible",
+                    "name": "default",
+                    "nameAlias": "",
+                    "owner": "infra",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "mcp": [
+            {
+                "attributes": {
+                    "adminSt": "disabled",
+                    "annotation": "",
+                    "ctrl": "",
+                    "descr": "",
+                    "dn": "",
+                    "initDelayTime": "180",
+                    "key": "SES13Hwe82bOHikgMjrH5/5SgYOOjiTXOolX/H6fYQai7aCzzc5KcQWDLwIQl3+yTgnIJwYEpsPn5N7tKJbA47Ly1Q==",
+                    "loopDetectMult": "3",
+                    "loopProtectAct": "port-disable",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "txFreq": "2",
+                    "txFreqMsec": "0",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "aaep": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                },
+                "children": [
+                    {
+                        "infraRsDomP": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tDn": "uni/l2dom-L2-Ext-Dom",
+                                "userdom": ":all:"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsDomP": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tDn": "uni/l3dom-Prod-L3O-Dom",
+                                "userdom": ":all:"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsDomP": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tDn": "uni/phys-Phys-Dom",
+                                "userdom": ":all:"
+                            }
+                        }
+                    },
+                    {
+                        "infraProvAcc": {
+                            "attributes": {
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "name": "default",
+                                "nameAlias": "",
+                                "userdom": "all"
+                            },
+                            "children": [
+                                {
+                                    "infraRsFuncToEpg": {
+                                        "attributes": {
+                                            "annotation": "",
+                                            "dn": "",
+                                            "encap": "vlan-4",
+                                            "instrImedcy": "lazy",
+                                            "mode": "regular",
+                                            "primaryEncap": "unknown",
+                                            "tDn": "uni/tn-infra/ap-access/epg-default",
+                                            "userdom": "all"
+                                        }
+                                    }
+                                },
+                                {
+                                    "dhcpInfraProvP": {
+                                        "attributes": {
+                                            "annotation": "",
+                                            "descr": "",
+                                            "dn": "",
+                                            "mode": "controller",
+                                            "name": "",
+                                            "nameAlias": "",
+                                            "userdom": "all"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "err_disable_recovery": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "errDisRecovIntvl": "300",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                },
+                "children": [
+                    {
+                        "edrEventP": {
+                            "attributes": {
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "event": "event-mcp-loop",
+                                "name": "",
+                                "nameAlias": "",
+                                "recover": "no",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "edrEventP": {
+                            "attributes": {
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "event": "event-bpduguard",
+                                "name": "",
+                                "nameAlias": "",
+                                "recover": "no",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "edrEventP": {
+                            "attributes": {
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "event": "event-ep-move",
+                                "name": "",
+                                "nameAlias": "",
+                                "recover": "no",
+                                "userdom": "all"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "qos": [
+            {
+                "attributes": {
+                    "admin": "enabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "mtu": "9216",
+                    "name": "",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "level1",
+                    "userdom": "all"
+                },
+                "children": [
+                    {
+                        "qosUburst": {
+                            "attributes": {
+                                "adminSt": "disabled",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "downThresBytes": "27262560",
+                                "downThresPer": "100",
+                                "name": "",
+                                "nameAlias": "",
+                                "type": "percentage",
+                                "upThresBytes": "27262560",
+                                "upThresPer": "100",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosSched": {
+                            "attributes": {
+                                "annotation": "",
+                                "bw": "20",
+                                "descr": "",
+                                "dn": "",
+                                "meth": "wrr",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosQueue": {
+                            "attributes": {
+                                "adminSt": "disabled",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "limit": "1522",
+                                "meth": "dynamic",
+                                "name": "",
+                                "nameAlias": "",
+                                "uburstDownThreshold": "100",
+                                "uburstUpThreshold": "100",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosPfcPol": {
+                            "attributes": {
+                                "adminSt": "no",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "enableScope": "tor",
+                                "name": "default",
+                                "nameAlias": "",
+                                "noDropCos": "",
+                                "ownerKey": "",
+                                "ownerTag": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosCong": {
+                            "attributes": {
+                                "afdQueueLength": "0",
+                                "algo": "tail-drop",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "ecn": "disabled",
+                                "forwardNonEcn": "disabled",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all",
+                                "wredMaxThreshold": "100",
+                                "wredMinThreshold": "0",
+                                "wredProbability": "0",
+                                "wredWeight": "0"
+                            }
+                        }
+                    },
+                    {
+                        "qosBuffer": {
+                            "attributes": {
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "min": "0",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "attributes": {
+                    "admin": "enabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "mtu": "9216",
+                    "name": "",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "level4",
+                    "userdom": "all"
+                },
+                "children": [
+                    {
+                        "qosUburst": {
+                            "attributes": {
+                                "adminSt": "disabled",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "downThresBytes": "27262560",
+                                "downThresPer": "100",
+                                "name": "",
+                                "nameAlias": "",
+                                "type": "percentage",
+                                "upThresBytes": "27262560",
+                                "upThresPer": "100",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosSched": {
+                            "attributes": {
+                                "annotation": "",
+                                "bw": "0",
+                                "descr": "",
+                                "dn": "",
+                                "meth": "wrr",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosQueue": {
+                            "attributes": {
+                                "adminSt": "disabled",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "limit": "1522",
+                                "meth": "dynamic",
+                                "name": "",
+                                "nameAlias": "",
+                                "uburstDownThreshold": "100",
+                                "uburstUpThreshold": "100",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosPfcPol": {
+                            "attributes": {
+                                "adminSt": "no",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "enableScope": "tor",
+                                "name": "default",
+                                "nameAlias": "",
+                                "noDropCos": "",
+                                "ownerKey": "",
+                                "ownerTag": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosCong": {
+                            "attributes": {
+                                "afdQueueLength": "0",
+                                "algo": "tail-drop",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "ecn": "disabled",
+                                "forwardNonEcn": "disabled",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all",
+                                "wredMaxThreshold": "100",
+                                "wredMinThreshold": "0",
+                                "wredProbability": "0",
+                                "wredWeight": "0"
+                            }
+                        }
+                    },
+                    {
+                        "qosBuffer": {
+                            "attributes": {
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "min": "0",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "attributes": {
+                    "admin": "enabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "mtu": "9216",
+                    "name": "",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "level5",
+                    "userdom": "all"
+                },
+                "children": [
+                    {
+                        "qosUburst": {
+                            "attributes": {
+                                "adminSt": "disabled",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "downThresBytes": "27262560",
+                                "downThresPer": "100",
+                                "name": "",
+                                "nameAlias": "",
+                                "type": "percentage",
+                                "upThresBytes": "27262560",
+                                "upThresPer": "100",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosSched": {
+                            "attributes": {
+                                "annotation": "",
+                                "bw": "0",
+                                "descr": "",
+                                "dn": "",
+                                "meth": "wrr",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosQueue": {
+                            "attributes": {
+                                "adminSt": "disabled",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "limit": "1522",
+                                "meth": "dynamic",
+                                "name": "",
+                                "nameAlias": "",
+                                "uburstDownThreshold": "100",
+                                "uburstUpThreshold": "100",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosPfcPol": {
+                            "attributes": {
+                                "adminSt": "no",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "enableScope": "tor",
+                                "name": "default",
+                                "nameAlias": "",
+                                "noDropCos": "",
+                                "ownerKey": "",
+                                "ownerTag": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosCong": {
+                            "attributes": {
+                                "afdQueueLength": "0",
+                                "algo": "tail-drop",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "ecn": "disabled",
+                                "forwardNonEcn": "disabled",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all",
+                                "wredMaxThreshold": "100",
+                                "wredMinThreshold": "0",
+                                "wredProbability": "0",
+                                "wredWeight": "0"
+                            }
+                        }
+                    },
+                    {
+                        "qosBuffer": {
+                            "attributes": {
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "min": "0",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "attributes": {
+                    "admin": "enabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "mtu": "9216",
+                    "name": "",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "level2",
+                    "userdom": "all"
+                },
+                "children": [
+                    {
+                        "qosUburst": {
+                            "attributes": {
+                                "adminSt": "disabled",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "downThresBytes": "27262560",
+                                "downThresPer": "100",
+                                "name": "",
+                                "nameAlias": "",
+                                "type": "percentage",
+                                "upThresBytes": "27262560",
+                                "upThresPer": "100",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosSched": {
+                            "attributes": {
+                                "annotation": "",
+                                "bw": "20",
+                                "descr": "",
+                                "dn": "",
+                                "meth": "wrr",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosQueue": {
+                            "attributes": {
+                                "adminSt": "disabled",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "limit": "1522",
+                                "meth": "dynamic",
+                                "name": "",
+                                "nameAlias": "",
+                                "uburstDownThreshold": "100",
+                                "uburstUpThreshold": "100",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosPfcPol": {
+                            "attributes": {
+                                "adminSt": "no",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "enableScope": "tor",
+                                "name": "default",
+                                "nameAlias": "",
+                                "noDropCos": "",
+                                "ownerKey": "",
+                                "ownerTag": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosCong": {
+                            "attributes": {
+                                "afdQueueLength": "0",
+                                "algo": "tail-drop",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "ecn": "disabled",
+                                "forwardNonEcn": "disabled",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all",
+                                "wredMaxThreshold": "100",
+                                "wredMinThreshold": "0",
+                                "wredProbability": "0",
+                                "wredWeight": "0"
+                            }
+                        }
+                    },
+                    {
+                        "qosBuffer": {
+                            "attributes": {
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "min": "0",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "attributes": {
+                    "admin": "enabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "mtu": "9216",
+                    "name": "",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "level3",
+                    "userdom": "all"
+                },
+                "children": [
+                    {
+                        "qosUburst": {
+                            "attributes": {
+                                "adminSt": "disabled",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "downThresBytes": "27262560",
+                                "downThresPer": "100",
+                                "name": "",
+                                "nameAlias": "",
+                                "type": "percentage",
+                                "upThresBytes": "27262560",
+                                "upThresPer": "100",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosSched": {
+                            "attributes": {
+                                "annotation": "",
+                                "bw": "20",
+                                "descr": "",
+                                "dn": "",
+                                "meth": "wrr",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosQueue": {
+                            "attributes": {
+                                "adminSt": "disabled",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "limit": "1522",
+                                "meth": "dynamic",
+                                "name": "",
+                                "nameAlias": "",
+                                "uburstDownThreshold": "100",
+                                "uburstUpThreshold": "100",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosPfcPol": {
+                            "attributes": {
+                                "adminSt": "no",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "enableScope": "tor",
+                                "name": "default",
+                                "nameAlias": "",
+                                "noDropCos": "",
+                                "ownerKey": "",
+                                "ownerTag": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosCong": {
+                            "attributes": {
+                                "afdQueueLength": "0",
+                                "algo": "tail-drop",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "ecn": "disabled",
+                                "forwardNonEcn": "disabled",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all",
+                                "wredMaxThreshold": "100",
+                                "wredMinThreshold": "0",
+                                "wredProbability": "0",
+                                "wredWeight": "0"
+                            }
+                        }
+                    },
+                    {
+                        "qosBuffer": {
+                            "attributes": {
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "min": "0",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "attributes": {
+                    "admin": "enabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "mtu": "9216",
+                    "name": "",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "level6",
+                    "userdom": "all"
+                },
+                "children": [
+                    {
+                        "qosUburst": {
+                            "attributes": {
+                                "adminSt": "disabled",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "downThresBytes": "27262560",
+                                "downThresPer": "100",
+                                "name": "",
+                                "nameAlias": "",
+                                "type": "percentage",
+                                "upThresBytes": "27262560",
+                                "upThresPer": "100",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosSched": {
+                            "attributes": {
+                                "annotation": "",
+                                "bw": "0",
+                                "descr": "",
+                                "dn": "",
+                                "meth": "wrr",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosQueue": {
+                            "attributes": {
+                                "adminSt": "disabled",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "limit": "1522",
+                                "meth": "dynamic",
+                                "name": "",
+                                "nameAlias": "",
+                                "uburstDownThreshold": "100",
+                                "uburstUpThreshold": "100",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosPfcPol": {
+                            "attributes": {
+                                "adminSt": "no",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "enableScope": "tor",
+                                "name": "default",
+                                "nameAlias": "",
+                                "noDropCos": "",
+                                "ownerKey": "",
+                                "ownerTag": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "qosCong": {
+                            "attributes": {
+                                "afdQueueLength": "0",
+                                "algo": "tail-drop",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "ecn": "disabled",
+                                "forwardNonEcn": "disabled",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all",
+                                "wredMaxThreshold": "100",
+                                "wredMinThreshold": "0",
+                                "wredProbability": "0",
+                                "wredWeight": "0"
+                            }
+                        }
+                    },
+                    {
+                        "qosBuffer": {
+                            "attributes": {
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "min": "0",
+                                "name": "",
+                                "nameAlias": "",
+                                "userdom": "all"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "policies_switch": {
+        "dot1x_node_auth": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "failAuthEpg": "",
+                    "failAuthVlan": "unknown",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "bfd_ipv4": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "detectMult": "3",
+                    "dn": "",
+                    "echoRxIntvl": "50",
+                    "echoSrcAddr": "0.0.0.0",
+                    "minRxIntvl": "50",
+                    "minTxIntvl": "50",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "slowIntvl": "2000",
+                    "startupIntvl": "10",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "bfd_ipv6": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "detectMult": "3",
+                    "dn": "",
+                    "echoRxIntvl": "50",
+                    "echoSrcAddr": "0.0.0.0",
+                    "minRxIntvl": "50",
+                    "minTxIntvl": "50",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "slowIntvl": "2000",
+                    "startupIntvl": "10",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "bfd_multihop_ipv4": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "detectMult": "3",
+                    "dn": "",
+                    "minRxIntvl": "250",
+                    "minTxIntvl": "250",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "bfd_multihop_ipv6": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "detectMult": "3",
+                    "dn": "",
+                    "minRxIntvl": "250",
+                    "minTxIntvl": "250",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "leaf_copp": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "type": "default",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "leaf_copp_prefilter": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "spine_copp": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "type": "default",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "spine_copp_prefilter": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "equipment_flash_conf": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "deltape": "21",
+                    "descr": "",
+                    "dn": "",
+                    "gbb": "5",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "peCycles": "5000",
+                    "readErr": "1000",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "fast_link_failover": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "modeType": "off",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "fibre_channel_node": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "ctrl": "",
+                    "descr": "",
+                    "dn": "",
+                    "fipKaIntvl": "8",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "fibre_channel_san": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "edTov": "2000",
+                    "fcMap": "0E:FC:00",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "raTov": "10000",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "forwarding_scale_profile": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "profType": "dual-stack",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "netflow_node": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "collectIntvl": "60",
+                    "descr": "",
+                    "dn": "",
+                    "mtu": "1500",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "templateIntvl": "300",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "poe_node": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "consumption": "4000",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "pwrCtrl": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "ptp_node_profile": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "PTP_NodePro",
+                    "nameAlias": "",
+                    "nodeDomain": "24",
+                    "nodePrio1": "128",
+                    "nodePrio2": "128",
+                    "nodeProfile": "telecom_full_path",
+                    "operatingMode": "hybrid",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                }
+            }
+        ],
+        "stp": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "ctrl": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "sync_eth_node": [
+            {
+                "attributes": {
+                    "adminSt": "disabled",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "qloption": "op1",
+                    "txDnuLag": "yes",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "usb_config": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "disabled": "no",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "vpc_protection_group": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "pairT": "explicit",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "vpc_domain": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "deadIntvl": "200",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ]
+    },
+    "interfaces": {
+        "leaf_access_polgrp": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "LeafAccessPort-PolGrp",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "infraRsL2PortAuthPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnL2PortAuthPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsL2PortSecurityPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnL2PortSecurityPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsHIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnFabricHIfPolName": "system-link-level-100M-auto",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosPfcIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosPfcIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsLldpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnLldpIfPolName": "system-lldp-disabled",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsFcIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnFcIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsCoppIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnCoppIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosDppIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosDppPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsDwdmIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnDwdmIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsLinkFlapPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnFabricLinkFlapPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsSynceEthIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnSynceEthIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsAttEntP": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tDn": "uni/infra/attentp-default",
+                                "userdom": ":all:"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsCdpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnCdpIfPolName": "system-cdp-disabled",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsMacsecIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnMacsecIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsMcpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnMcpIfPolName": "default",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsMonIfInfraPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnMonInfraPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosEgressDppIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosDppPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsStormctrlIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnStormctrlIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosIngressDppIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosDppPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosLlfcIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosLlfcIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosSdIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosSdIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsStpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnStpIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsL2IfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnL2IfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "leaf_pc_polgrp": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "lagT": "link",
+                    "name": "PC1-IntPolGrp",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "infraRsQosDppIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosDppPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsCoppIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnCoppIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsFcIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnFcIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsLldpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnLldpIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsLacpPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnLacpLagPolName": "system-lacp-active",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsLinkFlapPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnFabricLinkFlapPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsL2PortAuthPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnL2PortAuthPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsL2PortSecurityPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnL2PortSecurityPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsHIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnFabricHIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosPfcIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosPfcIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsSynceEthIfPolBndlGrp": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnSynceEthIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsCdpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnCdpIfPolName": "system-cdp-disabled",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsAttEntP": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tDn": "uni/infra/attentp-default",
+                                "userdom": ":all:"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsMacsecIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnMacsecIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsMcpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnMcpIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsMonIfInfraPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnMonInfraPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosEgressDppIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosDppPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsStormctrlIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnStormctrlIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosIngressDppIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosDppPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsL2IfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnL2IfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosLlfcIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosLlfcIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosSdIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosSdIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsStpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnStpIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "leaf_vpc_polgrp": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "lagT": "node",
+                    "name": "Leaf-VPC1-IntPolGrp",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "infraRsQosDppIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosDppPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsCoppIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnCoppIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsFcIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnFcIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsLldpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnLldpIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsLacpPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnLacpLagPolName": "system-lacp-active",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsLinkFlapPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnFabricLinkFlapPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsL2PortAuthPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnL2PortAuthPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsL2PortSecurityPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnL2PortSecurityPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsHIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnFabricHIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosPfcIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosPfcIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsSynceEthIfPolBndlGrp": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnSynceEthIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsCdpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnCdpIfPolName": "system-cdp-enabled",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsAttEntP": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tDn": "uni/infra/attentp-default",
+                                "userdom": ":all:"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsMacsecIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnMacsecIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsMcpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnMcpIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsMonIfInfraPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnMonInfraPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosEgressDppIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosDppPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsStormctrlIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnStormctrlIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosIngressDppIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosDppPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsL2IfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnL2IfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosLlfcIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosLlfcIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsQosSdIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnQosSdIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsStpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnStpIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "leaf_intpro": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "Leaf1-IntPro",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "infraHPortS": {
+                            "attributes": {
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "name": "Port1",
+                                "nameAlias": "",
+                                "ownerKey": "",
+                                "ownerTag": "",
+                                "type": "range",
+                                "userdom": ":all:"
+                            },
+                            "children": [
+                                {
+                                    "infraRsAccBaseGrp": {
+                                        "attributes": {
+                                            "annotation": "",
+                                            "dn": "",
+                                            "fexId": "101",
+                                            "tDn": "uni/infra/funcprof/accportgrp-LeafAccessPort-PolGrp",
+                                            "userdom": ":all:"
+                                        }
+                                    }
+                                },
+                                {
+                                    "infraPortBlk": {
+                                        "attributes": {
+                                            "annotation": "",
+                                            "descr": "",
+                                            "dn": "",
+                                            "fromCard": "1",
+                                            "fromPort": "1",
+                                            "name": "block2",
+                                            "nameAlias": "",
+                                            "toCard": "1",
+                                            "toPort": "1",
+                                            "userdom": ":all:"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "spine_access_polgrp": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "Spine-Access-PolGrp",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "infraRsLinkFlapPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnFabricLinkFlapPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsHIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnFabricHIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsMacsecIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnMacsecIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsCoppIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnCoppIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsCdpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnCdpIfPolName": "system-cdp-disabled",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsAttEntP": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tDn": "uni/infra/attentp-default",
+                                "userdom": ":all:"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "spine_intpro": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "Spine1-IntPro",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "infraSHPortS": {
+                            "attributes": {
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "name": "Port9",
+                                "nameAlias": "",
+                                "ownerKey": "",
+                                "ownerTag": "",
+                                "type": "range",
+                                "userdom": ":all:"
+                            },
+                            "children": [
+                                {
+                                    "infraRsSpAccGrp": {
+                                        "attributes": {
+                                            "annotation": "",
+                                            "dn": "",
+                                            "tDn": "uni/infra/funcprof/spaccportgrp-Spine-Access-PolGrp",
+                                            "userdom": ":all:"
+                                        }
+                                    }
+                                },
+                                {
+                                    "infraPortBlk": {
+                                        "attributes": {
+                                            "annotation": "",
+                                            "descr": "",
+                                            "dn": "",
+                                            "fromCard": "1",
+                                            "fromPort": "9",
+                                            "name": "block2",
+                                            "nameAlias": "",
+                                            "toCard": "1",
+                                            "toPort": "9",
+                                            "userdom": ":all:"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ]
+    },
+    "switches": {
+        "leaf_polgrp": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "LeafSW-PolGrp",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "infraRsBfdMhIpv6InstPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnBfdMhIpv6InstPolName": "default",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsBfdMhIpv4InstPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnBfdMhIpv4InstPolName": "default",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsPoeInstPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnPoeInstPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsSynceInstPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnSynceInstPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsBfdIpv6InstPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnBfdIpv6InstPolName": "default",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsLeafPGrpToCdpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnCdpIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsLeafPGrpToLldpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnLldpIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsLeafTopoctrlUsbConfigProfilePol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnTopoctrlUsbConfigProfilePolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsNetflowNodePol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnNetflowNodePolName": "default",
+                                "userdom": ":all:"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsTopoctrlFwdScaleProfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnTopoctrlFwdScaleProfilePolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsL2NodeAuthPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnL2NodeAuthPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsBfdIpv4InstPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnBfdIpv4InstPolName": "default",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsIaclLeafProfile": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnIaclLeafProfileName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsLeafCoppProfile": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnCoppLeafProfileName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsTopoctrlFastLinkFailoverInstPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnTopoctrlFastLinkFailoverInstPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsFcFabricPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnFcFabricPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsMstInstPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnStpInstPolName": "default",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsMonNodeInfraPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnMonInfraPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsFcInstPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnFcInstPolName": "default",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsEquipmentFlashConfigPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnEquipmentFlashConfigPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "leaf_swpro": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "Leaf-SWPro",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "infraRsAccPortP": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tDn": "uni/infra/accportprof-Leaf1-IntPro",
+                                "userdom": ":all:"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "spine_polgrp": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "SpineSW-PolGrp",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "infraRsSpineTopoctrlUsbConfigProfilePol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnTopoctrlUsbConfigProfilePolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsSpinePGrpToLldpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnLldpIfPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsSpinePGrpToCdpIfPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnCdpIfPolName": "system-cdp-disabled",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsSpineCoppProfile": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnCoppSpineProfileName": "default",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsSpineBfdIpv6InstPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnBfdIpv6InstPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsSpineBfdIpv4InstPol": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnBfdIpv4InstPolName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    },
+                    {
+                        "infraRsIaclSpineProfile": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tnIaclSpineProfileName": "",
+                                "userdom": "all"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "spine_swpro": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                },
+                "children": [
+                    {
+                        "infraRsSpAccPortP": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tDn": "uni/infra/spaccportprof-Spine1-IntPro",
+                                "userdom": ":all:"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "phys_ext_domains": {
+        "ext_l2": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "dn": "uni/l2dom-L2-Ext-Dom",
+                    "name": "L2-Ext-Dom",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "infraRsVlanNs": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tDn": "uni/infra/vlanns-[Default-VPool]-static",
+                                "userdom": ":all:"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "fibre_channel": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "dn": "uni/fc-FC-Dom",
+                    "name": "FC-Dom",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "infraRsVlanNs": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tDn": "uni/infra/vlanns-[Default-VPool]-static",
+                                "userdom": ":all:"
+                            }
+                        }
+                    },
+                    {
+                        "fcRsVsanNs": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tDn": "uni/infra/vsanns-[Default-VSAN-Pool]-static",
+                                "userdom": ":all:"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "ext_l3": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "dn": "uni/l3dom-Prod-L3O-Dom",
+                    "name": "Prod-L3O-Dom",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "infraRsVlanNs": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tDn": "uni/infra/vlanns-[Default-VPool]-static",
+                                "userdom": ":all:"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "physical": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "dn": "uni/phys-Phys-Dom",
+                    "name": "Phys-Dom",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "infraRsVlanNs": {
+                            "attributes": {
+                                "annotation": "",
+                                "dn": "",
+                                "tDn": "uni/infra/vlanns-[Default-VPool]-static",
+                                "userdom": ":all:"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "attributes": {
+                    "annotation": "",
+                    "dn": "uni/phys-phys",
+                    "name": "phys",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ]
+    },
+    "pools": {
+        "vlan": [
+            {
+                "attributes": {
+                    "allocMode": "static",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "Default-VPool",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "fvnsEncapBlk": {
+                            "attributes": {
+                                "allocMode": "static",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "from": "vlan-101",
+                                "name": "",
+                                "nameAlias": "",
+                                "role": "external",
+                                "to": "vlan-199",
+                                "userdom": ":all:"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "vsan": [
+            {
+                "attributes": {
+                    "allocMode": "static",
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "Default-VSAN-Pool",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": ":all:"
+                },
+                "children": [
+                    {
+                        "fvnsVsanEncapBlk": {
+                            "attributes": {
+                                "allocMode": "static",
+                                "annotation": "",
+                                "descr": "",
+                                "dn": "",
+                                "from": "vsan-10",
+                                "name": "",
+                                "nameAlias": "",
+                                "role": "external",
+                                "to": "vsan-19",
+                                "userdom": ":all:"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "vsan_attributes": [
+            {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "userdom": "all"
+                }
+            }
+        ],
+        "vxlan": []
+    }
+}
