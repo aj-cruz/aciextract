@@ -36,7 +36,8 @@ The root attributes are dictionaries (except tenants, which is a list of diction
 {
     "fabric_initialization": {
         "tep_pool": "",
-        "fabridc_id": ""
+        "fabridc_id": "",
+        "ctrl_count": ""
     },
     "fabric_inventory": {},
     "tep_pools": {

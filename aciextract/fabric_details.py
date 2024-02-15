@@ -1,4 +1,4 @@
-from .base import ChildExtractorBase
+from .base import ChildExtractorBase, dict_extractor
 
 
 class FabricInitialization(ChildExtractorBase):
@@ -17,6 +17,11 @@ class FabricInitialization(ChildExtractorBase):
         except KeyError:
             # This happens when there are no nodes added to the fabric (brand new or clean cluster)
             self.config["fabric_id"] = "unknown"
+
+        # CONTROLLER QUANTITY
+        self.config["ctrl_count"] = dict_extractor(
+            self.raw_configs, "ctrlrInst", "infraClusterPol"
+        )[0]["attributes"]["size"]
 
 
 class FabricInventory(ChildExtractorBase):

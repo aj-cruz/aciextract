@@ -1,7 +1,8 @@
 import json
+import tarfile
 from typing import Iterator
 
-from .archive_classes import ACIUntarJSON
+from .archive_classes import ACIUntarBase, ACIUntarJSON, ACIUntarXML
 from .extractor_classes import (
     ExtractInterestingKeys,
     ExtractFabricDetails,
@@ -14,7 +15,7 @@ from .extractor_classes import (
 class ACIConfig:
     def __init__(self, backup_file: str) -> None:
         self.backup_file: str = backup_file
-        self.interesting_files: list = list(ACIUntarJSON(backup_file))
+        self.interesting_files: list = list(self._get_extractor_())
         self.raw_configs: dict = ExtractInterestingKeys(
             self.interesting_files
         ).to_dict()
@@ -36,6 +37,28 @@ class ACIConfig:
         key: str
         for key in keys_to_iterate:
             yield (key, getattr(self, key))
+
+    def _get_extractor_(self) -> ACIUntarBase:
+        """Validate backup archive and determine which Untar subclass to use"""
+
+        tarball: tarfile.TarFile
+        with tarfile.open(self.backup_file, "r") as tarball:
+            # Create a list of JSON & XML files in the backup tarball
+            json_files: list = [
+                file for file in tarball.getnames() if file.endswith(".json")
+            ]
+            xml_files: list = [
+                file for file in tarball.getnames() if file.endswith(".xml")
+            ]
+
+        if json_files:
+            return ACIUntarJSON(self.backup_file)
+        elif xml_files:
+            return ACIUntarXML(self.backup_file)
+        else:
+            raise ValueError(
+                f"Unable to locate JSON or XML files in the archive. {self.backup_file} doesn't appear to be a valid ACI Config Backup."
+            )
 
     def to_dict(self) -> dict:
         return dict(iter(self))

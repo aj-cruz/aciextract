@@ -55,6 +55,7 @@ class ExtractInterestingKeys:
         self.infraAttEntityP: list = []  # AAEPs
         self.infraFuncP: list = []  # Int Policy Grps
         self.aaaUserEp: list = []  # Fabric Security (FIPS Mode)
+        self.ctrlrInst: list = []  # APIC Controller Count & Serial #s
 
         self._extract_config_(interesting_files)
 
@@ -94,15 +95,9 @@ class ExtractInterestingKeys:
                 if interesting_data:
                     setattr(self, key, interesting_data)
                     break
-
-        empty_keys: list = [key for key, value in self.to_dict().items() if not value]
-        if empty_keys:
-            print(
-                f"\nWARNING: Could not locate configuration for one or more keys: {str(empty_keys)}"
-            )
-            print(
-                "It could be no configuration exists for those objects/keys or it may indicate an incompatibility with this version of APIC.\n"
-            )
+            else:
+                pass
+                # raise Exception(f"Could not locate key '{key}' in any of the configuration files. Either the Untar operation produced incorrect results or the version of ACI has changed the expected structure.")
 
 
 class ExtractFabricDetails(ParentExtractorBase):
