@@ -47,6 +47,7 @@ class ExtractInterestingKeys:
         self.fvTenant: list = []  # All Tenant configuration (EPGs, etc.)
         self.fabricInst: list = []  # BGP Route Reflectors, Pod policy, vPC Policy
         self.infraInfra: list = []  # Switch Profiles, vlan pools, int policies
+        self.infraFexP: list = []  # FEX Profiles
         self.vmmProvP: list = []  # VMM Domains
         self.physDomP: list = []  # Physical Domains
         self.l2extDomP: list = []  # L2 Bridged Domains

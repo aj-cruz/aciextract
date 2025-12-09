@@ -184,6 +184,7 @@ The root attributes are dictionaries (except tenants, which is a list of diction
         "leaf_pc_polgrp": [],
         "leaf_vpc_polgrp": [],
         "leaf_intpro": [],
+        "fex_intpro": [],
         "spine_access_polgrp": [],
         "spine_intpro": [],
     },

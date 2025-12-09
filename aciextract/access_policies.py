@@ -328,6 +328,11 @@ class AccessInterfaces(ChildExtractorBase):
             self.raw_configs, "infraInfra", "infraAccPortP"
         )
 
+        # FEX INTERFACE PROFILES
+        self.config["fex_intpro"] = dict_extractor(
+            self.raw_configs, "infraInfra", "infraFexP"
+        )
+
         # SPINE ACCESS PORT POLICY GROUPS
         self.config["spine_access_polgrp"] = dict_extractor(
             self.raw_configs, "infraInfra", "infraFuncP", "infraSpAccPortGrp"
