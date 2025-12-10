@@ -4,9 +4,11 @@ from .base import ChildExtractorBase, dict_extractor
 class FabricInitialization(ChildExtractorBase):
     def _extract_config_(self) -> None:
         # TEP POOL
-        self.config["tep_pool"] = self.raw_configs["fabricSetupP"][0]["attributes"][
-            "tepPool"
-        ]
+        self.config["tep_pool"] = [
+            tep_pool["attributes"]["tepPool"]
+            for tep_pool in self.raw_configs["fabricSetupP"]
+            if tep_pool["attributes"]["podId"] == "1"
+        ][0]
 
         # FABRIC ID
         # The only place fabric id is found in the config files is attached to nodes, so we pull from the first node found
