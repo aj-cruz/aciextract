@@ -1,3 +1,6 @@
+# 12 December, 2025 - 0.1.2
+- Added extractor for APIC cluster information
+
 # 9 December, 2025 - 0.1.1
 - Added extractor for Fex Interface Profiles (`infraFexP`)
 

@@ -1,7 +1,12 @@
 from typing import Generator, Iterator
 
 from .base import ParentExtractorBase
-from .fabric_details import FabricInitialization, FabricInventory, FabricTEPPools
+from .fabric_details import (
+    FabricInitialization, 
+    APICCluster, 
+    FabricInventory, 
+    FabricTEPPools,
+)
 from .system_settings import (
     BGPConfig,
     EndpointControls,
@@ -109,6 +114,7 @@ class ExtractFabricDetails(ParentExtractorBase):
     def __init__(self, raw_configs: dict) -> None:
         super().__init__(raw_configs)
         self.fabric_initialization: dict = FabricInitialization(self.raw_configs).config
+        self.apic_cluster: dict = APICCluster(self.raw_configs).config
         self.fabric_inventory: dict = FabricInventory(self.raw_configs).config
         self.tep_pools: dict = FabricTEPPools(self.raw_configs).config
 

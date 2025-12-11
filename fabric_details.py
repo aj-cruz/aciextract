@@ -1,29 +1,92 @@
+# Built-In Imports
+import json
+
+# Custom Imports
 from .base import ChildExtractorBase, dict_extractor
+
+
+def safe_json_load(s: str) -> dict:
+    """
+    A wrapper for json.loads() to return an empty dictionary if json.loads()
+    raises an exception (invalid input)
+    
+    :param s: Input string to attempt the conversion to json
+    :type s: str
+    :return: Returns the string converted to a dictionary, or an empty dictionary ({})
+    :rtype: dict
+    """
+    try:
+        return json.loads(s)
+    except json.JSONDecodeError:
+        return {}
 
 
 class FabricInitialization(ChildExtractorBase):
     def _extract_config_(self) -> None:
-        # TEP POOL
-        self.config["tep_pool"] = [
-            tep_pool["attributes"]["tepPool"]
-            for tep_pool in self.raw_configs["fabricSetupP"]
-            if tep_pool["attributes"]["podId"] == "1"
-        ][0]
+        if len(self.raw_configs["ctrlrInst"]) > 1:
+            print(
+                "\nWARNING: ctrlrInst has more than one entry for APIC controllers. This is unexpected and should be investigated!!!!!"
+            )
 
-        # FABRIC ID
-        # The only place fabric id is found in the config files is attached to nodes, so we pull from the first node found
-        try:
-            self.config["fabric_id"] = self.raw_configs["fabricNodeIdentPol"][0][
-                "children"
-            ][0]["fabricNodeIdentP"]["attributes"]["fabricId"]
-        except KeyError:
-            # This happens when there are no nodes added to the fabric (brand new or clean cluster)
-            self.config["fabric_id"] = "unknown"
+        # Extract cluster information from the raw configs
+        cluster_data: list = [
+            each["tagAnnotation"]["attributes"]["value"]
+            for each in self.raw_configs["ctrlrInst"][0]["children"]
+            if "tagAnnotation" in each
+            and each["tagAnnotation"]["attributes"]["key"] == "bootx.cluster"
+        ]
+        if len(cluster_data) > 1:
+            print(
+                "\nWARNING: cluster data has more than one entry for APIC clusters (bootx.cluster). This is unexpected and should be investigated!!!!!"
+            )
+        cluster_data = json.loads(cluster_data[0])
 
-        # CONTROLLER QUANTITY
-        self.config["ctrl_count"] = dict_extractor(
-            self.raw_configs, "ctrlrInst", "infraClusterPol"
-        )[0]["attributes"]["size"]
+        # Populate the model with extracted data        
+        self.config["fabric_name"] = cluster_data["cluster"]["fabricName"]
+        self.config["fabric_id"] = cluster_data["cluster"]["fabricId"]
+        self.config["cluster_size"] = cluster_data["cluster"]["clusterSize"]
+        self.config["pod_id"] = cluster_data["pods"][0]["podId"]
+        self.config["tep_pool"] = cluster_data["pods"][0]["tepPool"]
+        self.config["infra_vlan"] = cluster_data["cluster"]["infraVlan"]
+        self.config["gipo_pool"] = cluster_data["cluster"]["gipoPool"]
+
+
+class APICCluster(ChildExtractorBase):
+    def _extract_config_(self) -> None:
+        # Extract APIC serial numbers from the raw configs (ctrlrInst > fabricNodeIdentPol > children > fabricCtrlrIdentP)
+        controller_serials: list = [
+            another["fabricCtrlrIdentP"]["attributes"]["serial"]
+            for each in self.raw_configs["ctrlrInst"][0]["children"]
+            if "fabricNodeIdentPol" in each
+            for another in each["fabricNodeIdentPol"]["children"]
+            if "fabricCtrlrIdentP" in another
+        ]
+
+        # Get the APIC data for those serial numbers (ctrlInst > children > tagAnnotation)
+        controller_data: list = sorted([
+                item["tagAnnotation"]["attributes"]
+                for item in self.raw_configs["ctrlrInst"][0]["children"]
+                if safe_json_load(item.get("tagAnnotation", {}).get("attributes", {}).get("value", "")).get("serialNumber", "") in controller_serials
+            ],
+            key=lambda d: safe_json_load(d["value"])["nodeId"]
+        )
+        
+        # Updated config model with APIC data
+        for controller in controller_data:
+            attributes = safe_json_load(controller["value"])
+            cimc_ip: str = safe_json_load([
+                item["tagAnnotation"]["attributes"]
+                for item in self.raw_configs["ctrlrInst"][0]["children"]
+                if item.get("tagAnnotation", {}).get("attributes", {}).get("key", "") == f"{controller['key']}.cimc"
+            ][0]["value"])["address4"]
+
+            self.config[attributes["nodeName"]] = {
+                "id": attributes["nodeId"],
+                "serial": attributes["serialNumber"],
+                "oob_ip": attributes["activeNodeAddr"],
+                "cimc_ip": cimc_ip,
+                "pod": attributes["podId"],
+            }
 
 
 class FabricInventory(ChildExtractorBase):
@@ -46,9 +109,8 @@ class FabricInventory(ChildExtractorBase):
         }
 
         """
-
         # SEARCH THE 1ST TREE (fabricNodeIdentPol) FOR HOSTNAME, NODE ID, & SERIAL NUMBER
-        # NOTE: "fabricNOdeIdentP" indicates the node is a switch, not an APIC
+        # NOTE: "fabricNodeIdentP" indicates the node is a switch, not an APIC
         fabric_nodes: list
         try:
             fabric_nodes = sorted(
