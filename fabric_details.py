@@ -39,16 +39,18 @@ class FabricInitialization(ChildExtractorBase):
             print(
                 "\nWARNING: cluster data has more than one entry for APIC clusters (bootx.cluster). This is unexpected and should be investigated!!!!!"
             )
-        cluster_data = json.loads(cluster_data[0])
 
-        # Populate the model with extracted data        
-        self.config["fabric_name"] = cluster_data["cluster"]["fabricName"]
-        self.config["fabric_id"] = cluster_data["cluster"]["fabricId"]
-        self.config["cluster_size"] = cluster_data["cluster"]["clusterSize"]
-        self.config["pod_id"] = cluster_data["pods"][0]["podId"]
-        self.config["tep_pool"] = cluster_data["pods"][0]["tepPool"]
-        self.config["infra_vlan"] = cluster_data["cluster"]["infraVlan"]
-        self.config["gipo_pool"] = cluster_data["cluster"]["gipoPool"]
+        if cluster_data:
+            cluster_data = json.loads(cluster_data[0])
+
+            # Populate the model with extracted data        
+            self.config["fabric_name"] = cluster_data["cluster"]["fabricName"]
+            self.config["fabric_id"] = cluster_data["cluster"]["fabricId"]
+            self.config["cluster_size"] = cluster_data["cluster"]["clusterSize"]
+            self.config["pod_id"] = cluster_data["pods"][0]["podId"]
+            self.config["tep_pool"] = cluster_data["pods"][0]["tepPool"]
+            self.config["infra_vlan"] = cluster_data["cluster"]["infraVlan"]
+            self.config["gipo_pool"] = cluster_data["cluster"]["gipoPool"]
 
 
 class APICCluster(ChildExtractorBase):
