@@ -2,9 +2,9 @@ from typing import Generator, Iterator
 
 from .base import ParentExtractorBase
 from .fabric_details import (
-    FabricInitialization, 
-    APICCluster, 
-    FabricInventory, 
+    FabricInitialization,
+    APICCluster,
+    FabricInventory,
     FabricTEPPools,
 )
 from .system_settings import (

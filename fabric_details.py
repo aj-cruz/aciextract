@@ -9,7 +9,7 @@ def safe_json_load(s: str) -> dict:
     """
     A wrapper for json.loads() to return an empty dictionary if json.loads()
     raises an exception (invalid input)
-    
+
     :param s: Input string to attempt the conversion to json
     :type s: str
     :return: Returns the string converted to a dictionary, or an empty dictionary ({})
@@ -43,7 +43,7 @@ class FabricInitialization(ChildExtractorBase):
         if cluster_data:
             cluster_data = json.loads(cluster_data[0])
 
-            # Populate the model with extracted data        
+            # Populate the model with extracted data
             self.config["fabric_name"] = cluster_data["cluster"]["fabricName"]
             self.config["fabric_id"] = cluster_data["cluster"]["fabricId"]
             self.config["cluster_size"] = cluster_data["cluster"]["clusterSize"]
@@ -65,22 +65,31 @@ class APICCluster(ChildExtractorBase):
         ]
 
         # Get the APIC data for those serial numbers (ctrlInst > children > tagAnnotation)
-        controller_data: list = sorted([
+        controller_data: list = sorted(
+            [
                 item["tagAnnotation"]["attributes"]
                 for item in self.raw_configs["ctrlrInst"][0]["children"]
-                if safe_json_load(item.get("tagAnnotation", {}).get("attributes", {}).get("value", "")).get("serialNumber", "") in controller_serials
+                if safe_json_load(
+                    item.get("tagAnnotation", {}).get("attributes", {}).get("value", "")
+                ).get("serialNumber", "")
+                in controller_serials
             ],
-            key=lambda d: safe_json_load(d["value"])["nodeId"]
+            key=lambda d: safe_json_load(d["value"])["nodeId"],
         )
-        
+
         # Updated config model with APIC data
         for controller in controller_data:
             attributes = safe_json_load(controller["value"])
-            cimc_ip: str = safe_json_load([
-                item["tagAnnotation"]["attributes"]
-                for item in self.raw_configs["ctrlrInst"][0]["children"]
-                if item.get("tagAnnotation", {}).get("attributes", {}).get("key", "") == f"{controller['key']}.cimc"
-            ][0]["value"])["address4"]
+            cimc_ip: str = safe_json_load(
+                [
+                    item["tagAnnotation"]["attributes"]
+                    for item in self.raw_configs["ctrlrInst"][0]["children"]
+                    if item.get("tagAnnotation", {})
+                    .get("attributes", {})
+                    .get("key", "")
+                    == f"{controller['key']}.cimc"
+                ][0]["value"]
+            )["address4"]
 
             self.config[attributes["nodeName"]] = {
                 "id": attributes["nodeId"],

@@ -24,6 +24,7 @@ class ACIConfig:
         self.fabric_policies: dict = ExtractFabricPolicies(self.raw_configs).to_dict()
         self.access_policies: dict = ExtractAccessPolicies(self.raw_configs).to_dict()
         self.tenants: list = self.raw_configs["fvTenant"]
+        self.virtual_networking: list = self.raw_configs["vmmProvP"]
 
     def __str__(self) -> str:
         return self.backup_file
