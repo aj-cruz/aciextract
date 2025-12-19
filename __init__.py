@@ -55,7 +55,8 @@ class ACIConfig:
         if json_files:
             return ACIUntarJSON(self.backup_file)
         elif xml_files:
-            return ACIUntarXML(self.backup_file)
+            raise Exception("XML backup parsing not yet implemented")
+            # return ACIUntarXML(self.backup_file)
         else:
             raise ValueError(
                 f"Unable to locate JSON or XML files in the archive. {self.backup_file} doesn't appear to be a valid ACI Config Backup."
