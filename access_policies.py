@@ -296,7 +296,7 @@ class AccessPoliciesGlobal(ChildExtractorBase):
 
         # QOS CLASSES
         self.config["qos"] = dict_extractor(
-            self.raw_configs, "infraInfra", "qosInstPol", "qosClass"
+            self.raw_configs, "infraInfra", "qosInstPol"
         )
 
 
